@@ -7,8 +7,8 @@ void main()
     system("cls");
     srand(time(NULL));
     int key=rand(),guess,i=1;
-    while(i>=100)
-    i=rand();
+    while(key>=100)
+    key=rand();
    HANDLE h=GetStdHandle(STD_OUTPUT_HANDLE);
     key=rand()%101;
     SetConsoleTextAttribute(h,15);
@@ -45,3 +45,4 @@ else if(guess>key)
         }
         i++;
 }}
+
